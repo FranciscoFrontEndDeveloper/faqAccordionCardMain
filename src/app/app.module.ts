@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { AccordioncontainerComponent } from './components/accordioncontainer/accordioncontainer.component';
+import { AccordionelementComponent } from './components/accordionelement/accordionelement.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    AccordioncontainerComponent
+    AccordioncontainerComponent,
+    AccordionelementComponent
   ],
   imports: [
     BrowserModule,
