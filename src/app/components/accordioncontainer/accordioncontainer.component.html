@@ -3,12 +3,10 @@
     <img src="assets/illustration-woman-online-mobile.svg" alt="imagen" />
   </figure>
   <h1>FAQ</h1>
-  <div>
-    <app-accordionelement></app-accordionelement>
-    <app-accordionelement></app-accordionelement>
-    <app-accordionelement></app-accordionelement>
-    <app-accordionelement></app-accordionelement>
-    <app-accordionelement></app-accordionelement>
+  <div class="containerAccordion__expander" *ngFor="let prueba of accordionInfo">
+    <app-accordionelement
+      [titleAccChild]="prueba.titleAcc"
+      [infoAccChild]="prueba.infoAcc"
+    ></app-accordionelement>
   </div>
-
 </section>

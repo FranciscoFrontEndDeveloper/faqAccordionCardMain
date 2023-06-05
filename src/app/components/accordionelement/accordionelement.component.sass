@@ -1,22 +1,29 @@
 @import '../../../styles'
 
 .containerElementAcc
- width: 100%
- div:nth-child(1)
-  display: flex
-  flex-direction: row
-  justify-content: space-between
- p
-  position: relative
-  height: 0
   width: 100%
-  overflow: hidden
-  transition: 0.5s
- h2
-  font-weight: 400
+  div:nth-child(1)
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  div:nth-child(2)
+  p
+    height: 0
+    width: 100%
+    overflow: hidden
+    transition: 0.5s
+    font-size: $Fontsize
+    line-height: 20px
+  h2
+    font-weight: 400
+    font-size: 14px
+    cursor: pointer
+    &:hover
+      color: $Softred
 
 .accActive
- p
-  height: auto
- h2
-  font-weight: 700
+  p
+    height: auto
+    padding: 10px 0
+  h2
+    font-weight: 700

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-accordionelement',
@@ -8,6 +8,10 @@ import { Component } from '@angular/core';
 export class AccordionelementComponent {
   openAcc: boolean = false;
   arrowDirection: string = 'assets/icon-arrow-down.svg'
+
+  @Input() titleAccChild: any;
+  @Input() infoAccChild: any;
+
 
   changeAcc() {
     this.openAcc = !this.openAcc;
