@@ -12,18 +12,36 @@
     margin: 0 25px
     display: grid
     grid-template-columns: 1fr
-    grid-template-rows: repeat(5, auto)
-    height: 85px
-figure
-  position: relative
-  img
-    position: absolute
-    width: 70%
-    top: -109px
-    right: 54px
-h1
-  text-align: center
-  font-family: $FamilyKumbhSans
-  font-weight: 700
-  font-size: 2em
-  padding: 20px 0
+    height: 80%
+  figure
+    position: relative
+    img
+      position: absolute
+      width: 70%
+      top: -109px
+      right: 54px
+  h1
+    text-align: center
+    font-family: $FamilyKumbhSans
+    font-weight: 700
+    font-size: 2.5em
+    padding: 20px 0
+
+@media screen and ( min-width: 1024px )
+  .containerAccordion
+    width: 940px
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 30% 1fr
+    align-items: center
+    &__expander
+      grid-column: 2/3
+    figure
+      grid-row: 1/7
+      img
+        position: absolute
+        width: 100%
+        top: -213px
+        right: 70px
+    h1
+      text-align: left
+      margin-left: 25px
